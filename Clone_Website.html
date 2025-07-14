@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft | Frontend Development Hub</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <h2> <strong>CodeCraft</strong></h2>
+                </div>
+                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#insights">Industry Insights</a></li>
+                    <li><a href="#tech">Technology Radar</a></li>
+                    <li><a href="#learning">Learning Roadmaps</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+    </header>
+    
+    <section id = '#home'>
+        <div>
+            <h2>Master Frontend Development in 2025</h2>
+            <p>Join our community of developers and stay ahead with the latest trends, tools, and techniques in frontend development. Learn, build, and grow with CodeCraft.</p>
+            <a href="#learning" class="cta-button">Start Learning</a>
+        </div>
+    </section>
+    <hr>
+
+    <section id = '#insights'>
+        <div>
+            <h2>Industry Insights</h2>
+            <div>
+                 <div>
+                   <h3>Salary Trends</h3>
+                   <p><strong>Junior Frontend Developer:</strong>&dollar;55k-&dollar;75k (US), &euro;28K-&euro;42k (EU)</p>
+                   <p><strong>Mid-Level Frontend:</strong>&dollar;75k-&dollar;110k (US), &euro;42K-&euro;65k (EU)</p>
+                   <p><strong>Senior Frontend Engineer:</strong>&dollar;110k-&dollar;160k (US), &euro;65K-&euro;95k (EU)</p>
+                   <p><strong>Freelance Rates:</strong>&dollar;40-&dollar;120/hr depending on experience and region </p>
+                  </div>
+                
+                <div>
+                    <h3>Job Market</h3>
+                    <p><strong>Top Hiring Companies:</strong> Google, Meta, Shopify</p>
+                    <p><strong>Trending Startups:</strong> Figma, Notion</p>
+                    <p><strong>Key In-Demand Skills:</strong></p>
+                      <ul>
+                        <li>React.js / Next.js(72% of job postings)</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="tech">
+        <div>
+            <h2>Frontend Tech Radar 2025</h2>
+            <div>
+                <div class="tech-tab active" data-tab="trends">Trends</div>
+                <div class="tech-tab" data-tab="tools">Tools</div>
+                <div class="tech-tab" data-tab="deployment">Deployment</div>
+            </div>
+
+            <div>
+                <ul>
+                    <li>React still leads, but Qwik and Svelte are rising</li>
+                    <li>Tailwind CSS is now the go-to for styling</li>
+                    <li>Vite and Turbopack are replacing Webpack</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><strong>Frameworks:</strong> React, Next.js, Svelte</li>
+                    <li><strong>Styling:</strong> Tailwind CSS, SCSS</li>
+                    <li><strong>Build:</strong> Vite, Turbopack</li>
+                    <li><strong>Design:</strong> Figma, Storybook</li>
+                    <li><strong>Emerging:</strong> Bun, HTMX</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Next.js + Vercel for fullstack apps</li>
+                    <li>React + Netlify for Jamstack</li>
+                    <li>Astro/SvelteKit + Cloudflare for static sites</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="learning">
+        <div>
+            <h2 class="section-title">Learning Roadmaps</h2>
+            <div>
+                <div>
+                    <h3>Frontend in 2025 Path</h3>
+                    <ol>
+                        <li><strong>HTML/CSS Fundamentals:</strong> Semantic HTML, Flexbox, Grid</li>
+                        <li><strong>JavaScript Core:</strong> ES6+, DOM Manipulation, Async JS</li>
+                        <li><strong>React/Vue/Svelte:</strong> Components, State Management</li>
+                        <li><strong>TypeScript:</strong> Static Typing for JavaScript</li>
+                        <li><strong>Testing:</strong> Jest, React Testing Library, Cypress</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Specialization Paths</h3>
+                    <details>
+                        <summary>UI/UX Focus</summary>
+                        <ul>
+                            <li>Figma for prototyping</li>
+                            <li>Framer for animations</li>
+                            <li>Design systems</li>
+                            <li>User research basics</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Performance Optimization</summary>
+                        <ul>
+                            <li>Web Vitals metrics</li>
+                            <li>Lighthouse audits</li>
+                            <li>Bundle size reduction</li>
+                            <li>Lazy loading</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Accessibility</summary>
+                        <ul>
+                            <li>WCAG guidelines</li>
+                            <li>ARIA attributes</li>
+                            <li>Screen reader testing</li>
+                            <li>Color contrast</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="courses">
+        <div>
+            <h2 class="section-title">Frontend Courses</h2>
+            <div>
+                <div>
+                    <input type="text" id="courseSearch" class="form-control" placeholder="Search courses...">
+                </div>
+                <div>
+                    <select id="courseFilter" class="form-control">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <button id="addCourseBtn" class="btn">Add Course</button>
+            </div>
+            <table class="courses-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Salary Potential</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="courseTableBody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Project Showcase</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Twitter Clone">
+                    </div>
+                    <div class="project-info">
+                        <h3>Twitter UI Clone</h3>
+                        <p>Build a responsive Twitter interface with React and Tailwind CSS</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Tailwind</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Spotify Clone">
+                    </div>
+                    <div class="project-info">
+                        <h3>Spotify Player</h3>
+                        <p>Music player application with Spotify API integration</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-commerce">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Dashboard</h3>
+                        <p>Admin dashboard for e-commerce with product management</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue</span>
+                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="mentors">
+        <div class="container">
+            <h2 class="section-title">Meet Our Mentors</h2>
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="feti.jpg" alt="Fatiha Abdurahim">
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Fatiha Abdurahim</h3>
+                        <p>Fullstack developer</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/FetuTechTamer" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/fethiya-abdurehim-3a0248331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="dandi.jpg" alt="Dandi Hirko">
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Dandi Hirko</h3>
+                        <p>Fullstack developer</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/dandi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/dandi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="nafi.jpg" alt="Nafargi Damena">
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Nafargi Damena</h3>
+                        <p>Fullstack developer and Visual Artist</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/nafargi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/nafargidamena" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interactive">
+        <div class="container">
+            <h2 class="section-title">Interactive Elements</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Salary Calculator</h3>
+                    <div class="calculator">
+                        <div class="form-group">
+                            <label for="experience">Years of Experience:</label>
+                            <select id="experience" class="form-control">
+                                <option value="0-1">0-1 (Junior)</option>
+                                <option value="2-4">2-4 (Mid-Level)</option>
+                                <option value="5+">5+ (Senior)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <select id="location" class="form-control">
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="eu">Europe</option>
+                                <option value="india">India</option>
+                                <option value="remote">Remote (Global)</option>
+                            </select>
+                        </div>
+                        <button id="calculateBtn" class="btn">Calculate</button>
+                        <div class="result" id="salaryResult"></div>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h3>Tech Quiz</h3>
+                    <div class="quiz-container">
+                        <div class="quiz-question">
+                            <p>Which framework suits your development style?</p>
+                        </div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option1" value="react">
+                                <label for="option1">I prefer a large ecosystem with many solutions</label>
+                            </div>
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option2" value="vue">
+                                <label for="option2">I want something balanced with good documentation</label>
+                            </div>
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option3" value="svelte">
+                                <label for="option3">I prefer minimal boilerplate and simplicity</label>
+                            </div>
+                        </div>
+                        <button id="quizSubmit" class="btn">Submit</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="todo">
+        <div class="container">
+            <h2 class="section-title">Frontend To-Do List</h2>
+            <div class="todo-container">
+                <div class="todo-header">
+                    <h3>My Learning Tasks</h3>
+                    <div>
+                        <input type="text" id="todoInput" class="form-control" placeholder="Add a new task...">
+                        <button id="addTodoBtn" class="btn">Add</button>
+                    </div>
+                </div>
+                <ul class="todo-list" id="todoList">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Developer Testimonials</h2>
+            <div class="testimonials" id="testimonialsContainer">
+            </div>
+        </div>
+    </section>
+
+    <section id="multimedia">
+        <div class="container">
+            <h2 class="section-title">Frontend Development Video</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/Tef1e9FiSR0?si=3c8LnLWHTy4EqjOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div>
+            <h2 class="section-title">Contact Us</h2>
+            <div>
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <div class>
+                    <h3>CodeCraft</h3>
+                    <p>Your premier destination for frontend development resources, learning, and community.</p>
+                    <div>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#insights">Industry Insights</a></li>
+                        <li><a href="#tech">Technology Radar</a></li>
+                        <li><a href="#learning">Learning Roadmaps</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#resources">Resource Library</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#mentors">Mentors</a></li>
+                        <li><a href="#interview">Interview Prep</a></li>
+                        <li><a href="#interactive">Interactive Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2025 CodeCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
