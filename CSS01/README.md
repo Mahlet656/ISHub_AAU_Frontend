@@ -1,4 +1,5 @@
 CSS Homework 01 - My Reflections
+
 Here's my submission for the CSS Challenge Mode homework. It was a great project that put some important concepts into practice. I've put all three exercises into the same HTML and CSS files, as requested.
 What I Learned and How I Approached It
 Exercise 1: Building the Profile Cards
