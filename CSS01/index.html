@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Homework 01</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons, as suggested by the homework for the social media list -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- =================================================================
+         Exercise 1: Advanced CSS Selectors - Profile Card Grid
+         ================================================================== -->
+    <section class="team">
+        <div class="profile-card" id="card-1">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500" alt="Profile picture of Maya Chen">
+            </div>
+            <h3>Maya Chen</h3>
+            <p>Lead Developer</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:fake.email@example.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="profile-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500" alt="Profile picture of Alex Riley">
+            </div>
+            <h3>Alex Riley</h3>
+            <p>UX/UI Designer</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="profile-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=500" alt="Profile picture of Jordan Lee">
+            </div>
+            <h3>Jordan Lee</h3>
+            <p>Project Manager</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         Exercise 2: CSS Box Model - Pricing Table Layout
+         ================================================================== -->
+    <section class="pricing-table">
+        <div class="plan plan-basic">
+            <h4>Basic</h4>
+            <div class="price">$9/mo</div>
+            <ul>
+                <li>10GB Storage</li>
+                <li>1 User</li>
+                <li>Basic Support</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="plan plan-popular">
+            <h4>Pro</h4>
+            <div class="price">$29/mo</div>
+            <ul>
+                <li>50GB Storage</li>
+                <li>5 Users</li>
+                <li>Priority Support</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="plan plan-enterprise">
+            <span class="tooltip-text">Contact us for a custom quote!</span>
+            <h4>Enterprise</h4>
+            <div class="price">Custom</div>
+            <ul>
+                <li>Unlimited Storage</li>
+                <li>Unlimited Users</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button>Contact Us</button>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         Exercise 3: CSS Display + Position - Interactive Hero Section
+         ================================================================== -->
+    <header class="hero">
+        <nav>
+            <a href="#" class="nav-logo">Logo</a>
+            <ul>
+                <li><a href="#" class="nav-link-inline">Home</a></li>
+                <li><a href="#" class="nav-link-inline-block">About</a></li>
+                <li><a href="#" class="nav-link-block">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Welcome to Our Site</h1>
+            <p>A short intro text describing the purpose of this hero section.</p>
+            <button>Get Started</button>
+        </div>
+        <!-- This image is positioned as a background using CSS -->
+        <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?w=1200" class="hero-bg" alt="Abstract background image with code">
+    </header>
+
+    <!-- Adding some extra content to demonstrate the sticky nav -->
+    <div style="height: 1200px; background: #f0f0f0; padding: 20px; font-family: sans-serif;">
+      <h2>Scroll down to see the sticky nav in action.</h2>
+    </div>
+
+</body>
+</html>
