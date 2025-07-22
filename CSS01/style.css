@@ -1,0 +1,345 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* =================================================================
+   Exercise 1: Profile Card Grid Styles
+   ================================================================== */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Child Selector: Direct child .profile-card of .team */
+.team > .profile-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative; /* Needed for the pseudo-element badge */
+    overflow: hidden; /* Keeps the ribbon contained */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pseudo-class: :hover for interactivity */
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Element Selector: Styling all h3 elements */
+h3 {
+    margin: 1rem 0 0.25rem;
+}
+
+.profile-card p {
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.profile-card .card-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Descendant Selector */
+.social-links li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-links a {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Attribute Selector: Targets the fake email link */
+a[href^="mailto"] {
+    color: #d9534f; /* Make the email icon red */
+}
+
+/* Pseudo-element: A ribbon for the first card using an ID selector */
+#card-1::before {
+    content: 'Leader';
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background-color: #5cb85c;
+    color: white;
+    padding: 5px 35px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* =================================================================
+   Exercise 2: Pricing Table Styles
+   ================================================================== */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically align items */
+    padding: 4rem 0;
+    gap: 2rem; /* Using gap for spacing */
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    position: relative; /* Needed for the ::before badge */
+}
+
+/* Box-sizing differences as required */
+.plan-basic {
+    box-sizing: content-box; /* Width = 300px + padding + border */
+    border-width: 5px; /* Exaggerate border to see the effect */
+}
+
+.plan-popular, .plan-enterprise {
+    box-sizing: border-box; /* Width = 300px (includes padding and border) */
+    border-width: 5px;
+}
+
+.plan h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.plan .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.plan ul li {
+    margin-bottom: 0.75rem;
+    color: #666;
+}
+
+.plan button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+/* Highlighting the middle plan */
+.plan-popular {
+    border-color: #007bff;
+    transform: scale(1.05); /* Make it stand out a bit more */
+}
+
+/* Pseudo-element: "Most Popular" badge */
+.plan-popular::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007bff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Bonus: CSS-only tooltip on the enterprise plan */
+.plan-enterprise .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 160px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%; /* Position above the plan */
+    left: 50%;
+    margin-left: -80px; /* Center the tooltip */
+    transition: opacity 0.3s;
+}
+
+.plan-enterprise:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* =================================================================
+   Exercise 3: Hero Section Styles
+   ================================================================== */
+.hero {
+    position: relative; /* Context for absolute positioning of the image */
+    height: 60vh;
+    min-height: 400px;
+    color: white;
+    display: flex; /* Using flex to align content inside */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box; /* To keep padding inside the height */
+}
+
+/* z-index is used to place the image behind the content */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    z-index: -1; /* Place it behind everything */
+    filter: brightness(0.5); /* Darken the image to make text readable */
+}
+
+/* Sticky navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav .nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+/* Demonstrating different display properties */
+.nav-link-inline { display: inline; } /* Takes only content width, ignores vertical margin/padding */
+.nav-link-inline-block { display: inline-block; padding: 5px 10px; } /* Like inline, but respects dimensions */
+.nav-link-block { display: block; } /* Takes full width available */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+.hero .content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Bonus: Responsive Media Query */
+@media (max-width: 768px) {
+    /* Stack profile cards vertically on mobile */
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack pricing plans vertically on mobile */
+    .pricing-table {
+        flex-direction: column;
+    }
+    .plan-popular {
+        transform: scale(1); /* Reset scaling for vertical layout */
+    }
+
+    /* Adjust hero text size for smaller screens */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Make the nav items stack */
+    nav {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+}
